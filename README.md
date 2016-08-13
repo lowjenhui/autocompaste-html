@@ -29,7 +29,9 @@ $ python -m SimpleHTTPServer    // Python 2
 $ python -m http.server         // Python 3
 ```
 
-Visit [http://localhost:8000/](http://localhost:8000/) in your web browser (Chrome preferred) to see the welcome screen for the experiment. Github not only hosts code, it can also serve static content from repositories via [Github Pages](https://pages.github.com/). Pushing to the `gh-pages` branch of your repository will update the publicly accessible website for your project. You can try out this repository at [http://yangshun.github.io/autocompaste-html](http://yangshun.github.io/autocompaste-html). For your own forked repository, visit `http://<your username>.github.io/autocompaste-html`. Hosting the experiment on the WWW is a good way to let your friends participate in the experiment remotely. However, be sure to make your forked repository private to avoid being plagiarised.
+EDIT (@emmeryn): For some reason, `python -m SimpleHTTPServer` results in an `Uncaught TypeError: Cannot read property 'length' of undefined` in experiment.html:180. I'm not an amazing web developer, but a workaround I found is to replace the line `trialsData = data.experiments;` with `trialsData = $.parseJSON(data).experiments;` if you are using this method to test locally. Be sure to revert the change when you push it onto a web host of your choice, such as Github Pages (explained next).
+
+Visit [http://localhost:8000/](http://localhost:8000/) in your web browser (Chrome preferred) to see the welcome screen for the experiment. Github not only hosts code, it can also serve static content from repositories via [Github Pages](https://pages.github.com/). Pushing to the `gh-pages` branch of your repository will update the publicly accessible website for your project. You can try out this repository at [http://emmeryn.github.io/autocompaste-html](http://emmeryn.github.io/autocompaste-html). For your own forked repository, visit `http://<your username>.github.io/autocompaste-html`. Hosting the experiment on the WWW is a good way to let your friends participate in the experiment remotely. However, be sure to make your forked repository private to avoid being plagiarised.
 
 ### Interface Walkthrough
 
@@ -219,5 +221,6 @@ Each object in the array will be transformed into a window and displayed in the 
 
 ### Credits
 
+- Sue Zheng Hao (Readme update, minor fix)
 - Tay Yang Shun (Interface and ACPToolKit)
 - Wong Yong Jie (AutoComPaste Engine)
