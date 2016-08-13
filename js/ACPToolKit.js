@@ -98,9 +98,12 @@ var ACPToolKit = (function () {
                 case 'TRADITIONAL':
                     var engine = null;
                     break;
-                case 'ACP':
-                default:
+                case 'AUTOCOMPASTE':
                     var engine = new AutoComPaste.Engine();
+                    break;
+                default:
+                    var engine = null;
+                    console.error("Provided technique " + options.technique + " does not exist!")
                     break;
             }
 
