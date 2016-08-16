@@ -3,12 +3,12 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>CS4249 Assignment 1</title>
+        <title>CS4249 Assignment 1 - AutoComPaste vs Ctrl-C Ctrl-V</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
@@ -59,12 +59,12 @@
             $(function () {
                 $('#pid-form').submit(function (event) {
                     event.preventDefault();
-                    var pid = $('#pid').val();
-                    if (pid) {
-                        ACPToolKit.setCurrentParticipantId(pid);
+                    var participantId = $('#pid').val();
+                    if (participantId) {
+                        ACPToolKit.setCurrentParticipantId(participantId);
                         window.location = 'questionnaire-pre.html';
                     } else {
-                        alert('Please enter a valid Participant ID (pid)!');
+                        alert('Please enter a valid Participant ID!');
                     }
                 });
             });
