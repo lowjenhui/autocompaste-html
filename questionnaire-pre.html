@@ -106,6 +106,7 @@
                     event.preventDefault();
                     var formResponses = $(this).serializeArray();
                     // Do your own form validation here.
+                    // Download the form responses to be analysed later.
                     ACPToolKit.downloadFormData(formResponses, 'pre');
                     window.location = 'instructions.html';
                 });

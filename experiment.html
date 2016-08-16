@@ -89,6 +89,7 @@
 
             function next () {
                 if (currentTrial !== 0) {
+                    // Save results of current trial
                     var trialResult = ACPToolKit.getCurrentTrialState();
 
                     var technique = trialResult.technique;
@@ -108,6 +109,7 @@
                 }
 
                 if (currentTrial < totalNumberOfTrials) {
+                    // Show the next trial
                     ACPToolKit.presentTrial(trialsData[currentTrial]);
                     currentTrial += 1;
                     $('.js-expt-current-trial').text(currentTrial);
@@ -120,6 +122,7 @@
 
             $(document).ready(function () {
                 $.get('data/experiments.json', function (data) {
+                    // Initialise experiments
                     trialsData = data.experiments;
                     currentTrial = 0;
                     totalNumberOfTrials = trialsData.length;
