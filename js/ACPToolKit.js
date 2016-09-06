@@ -6,11 +6,12 @@ var ACPToolKit = (function () {
         DataStorage.setItem('pid', pid);
     }
 
+    // Ensure that the participant id is valid (1-6)
     module.getCurrentParticipantId = function () {
         var pid = DataStorage.getItem('pid');
-        if (!pid) {
-            alert('Current participant not set!');
-            pid = prompt('Enter current participant ID:').toString();
+        if (!(pid >= 1 && pid <= 6)) {
+            alert('Invalid participant id ☹');
+            pid = prompt('Please enter current participant ID:').toString();
             this.setCurrentParticipantId(pid);
         }
         return pid;
@@ -70,20 +71,24 @@ var ACPToolKit = (function () {
         }
     });
 
-    if (window.location.pathname.indexOf('experiment') > -1) {
+    if (window.location.pathname.indexOf('experiment') > -1 || 
+        window.location.pathname.indexOf('practice') > -1) {
         var wm = new WindowManager('autocompaste-display');
         var currentTrialOptions = null;
         var startTime = null;
 
         module.presentTrial = function (options) {
+            console.log("options", options);
             startTime = new Date().getTime();
             currentTrialOptions = options;
 
+            var article_to_show = options.article_to_show;
             var data_file = options.data_file;
             var stimuli = options.stimuli;
 
             $('.js-expt-technique').text(options.technique);
             $('.js-expt-granularity').text(options.granularity);
+            $('.js-expt-articles').text(options.articles);
             $('.js-expt-stimuli').text(options.stimuli);
 
             // Clean up DOM
@@ -107,7 +112,7 @@ var ACPToolKit = (function () {
                     break;
             }
 
-            var iface = new AutoComPaste.Interface(wm, engine, data_file);
+            var iface = new AutoComPaste.Interface(wm, engine, data_file, article_to_show);
 
             // Highlight the relevant text.
             iface.addEventListener('loaded', function () {

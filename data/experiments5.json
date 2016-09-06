@@ -1,0 +1,2488 @@
+{
+  "experiments": [
+	  {
+	    "trial_number": 1,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 0,
+	    "articles": 1,
+	    "article_to_show": [
+	      0
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Smooth-coated otters are often sighted in Singapore's mangroves, mudflats and coastal areas."
+	  },
+	  {
+	    "trial_number": 2,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 3,
+	    "articles": 1,
+	    "article_to_show": [
+	      3
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "In Singapore, sharks are now rarely seen and occasional sightings still confirm their presence, and it is surprising to note that hammerhead sharks were common in Singapore's past (Tham, 1973b)."
+	  },
+	  {
+	    "trial_number": 3,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 6,
+	    "articles": 1,
+	    "article_to_show": [
+	      6
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Queen Elizabeth II has owned over 30 corgis during her reign."
+	  },
+	  {
+	    "trial_number": 4,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 0,
+	    "articles": 1,
+	    "article_to_show": [
+	      0
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Otters have become something of a national obsession in Singapore, to the extent that in early August Singaporeans chose this family, known as the Bishan Ten, as the official emblem of Singapore's 51st year."
+	  },
+	  {
+	    "trial_number": 5,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 3,
+	    "articles": 1,
+	    "article_to_show": [
+	      3
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Hammerhead sharks are named for the unusual and distinctive structure of their heads, which are flattened and laterally extended into a hammer shape called a cephalofoil. Hammerheads have disproportionately small mouths and seem to do a lot of bottom-hunting. Unlike most sharks, hammerheads usually swim in schools during the day, becoming solitary hunters at night. "
+	  },
+	  {
+	    "trial_number": 6,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 6,
+	    "articles": 1,
+	    "article_to_show": [
+	      6
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Queen Elizabeth II has owned over 30 corgis during her reign. The corgis enjoy a privileged life in Buckingham Palace. They reside in the Corgi Room. The royal corgis have an extensive menu at the palace which includes fresh rabbit and beef, served by a gourmet chef. At Christmas, the Queen makes stockings for pets full of toys and delicacies such as biscuits."
+	  },
+	  {
+	    "trial_number": 7,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 0,
+	    "articles": 1,
+	    "article_to_show": [
+	      0
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "at least 50 otters in Singapore"
+	  },
+	  {
+	    "trial_number": 8,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 3,
+	    "articles": 1,
+	    "article_to_show": [
+	      3
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "disproportionately small mouths"
+	  },
+	  {
+	    "trial_number": 9,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 6,
+	    "articles": 1,
+	    "article_to_show": [
+	      6
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Obesity"
+	  },
+	  {
+	    "trial_number": 10,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 0,
+	    "articles": 3,
+	    "article_to_show": [
+	      0,
+	      3,
+	      6
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "There are at least 50 otters in Singapore, with families scattered in places such as Punggol, Bishan, Marina Bay, Changi, Kallang and Pasir Ris."
+	  },
+	  {
+	    "trial_number": 11,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 3,
+	    "articles": 3,
+	    "article_to_show": [
+	      0,
+	      3,
+	      6
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Hammerhead sharks are named for the unusual and distinctive structure of their heads, which are flattened and laterally extended into a hammer shape called a cephalofoil."
+	  },
+	  {
+	    "trial_number": 12,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 6,
+	    "articles": 3,
+	    "article_to_show": [
+	      0,
+	      3,
+	      6
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Dogs have better low-light vision than humans because of a special light-reflecting layer behind their retinas."
+	  },
+	  {
+	    "trial_number": 13,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 0,
+	    "articles": 3,
+	    "article_to_show": [
+	      0,
+	      3,
+	      6
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Smooth-coated otters are often sighted in Singapore's mangroves, mudflats and coastal areas. The Bishan 10 are the friendliest of the bunch. There are at least 50 otters in Singapore, with families scattered in places such as Punggol, Bishan, Marina Bay, Changi, Kallang and Pasir Ris. Otters have thrived partly due to Singapore's efforts to clean up its water bodies and partly because otters have been forced out of the neighbouring shores of Johor which have undergone development."
+	  },
+	  {
+	    "trial_number": 14,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 3,
+	    "articles": 3,
+	    "article_to_show": [
+	      0,
+	      3,
+	      6
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Hammerhead sharks are named for the unusual and distinctive structure of their heads, which are flattened and laterally extended into a hammer shape called a cephalofoil. Hammerheads have disproportionately small mouths and seem to do a lot of bottom-hunting. Unlike most sharks, hammerheads usually swim in schools during the day, becoming solitary hunters at night. "
+	  },
+	  {
+	    "trial_number": 15,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 6,
+	    "articles": 3,
+	    "article_to_show": [
+	      0,
+	      3,
+	      6
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Dogs have better low-light vision than humans because of a special light-reflecting layer behind their retinas. Dogs’ only sweat glands are between their paw pads. Dogs can be trained to detect epileptic seizures in humans. Obesity is the #1 health problem among dogs."
+	  },
+	  {
+	    "trial_number": 16,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 0,
+	    "articles": 3,
+	    "article_to_show": [
+	      0,
+	      3,
+	      6
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Bishan Ten"
+	  },
+	  {
+	    "trial_number": 17,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 3,
+	    "articles": 3,
+	    "article_to_show": [
+	      0,
+	      3,
+	      6
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "disproportionately small mouths"
+	  },
+	  {
+	    "trial_number": 18,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 6,
+	    "articles": 3,
+	    "article_to_show": [
+	      0,
+	      3,
+	      6
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Obesity"
+	  },
+	  {
+	    "trial_number": 19,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 0,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Smooth-coated otters are often sighted in Singapore's mangroves, mudflats and coastal areas."
+	  },
+	  {
+	    "trial_number": 20,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 3,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Unlike most sharks, hammerheads usually swim in schools during the day, becoming solitary hunters at night."
+	  },
+	  {
+	    "trial_number": 21,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 6,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Obesity is the #1 health problem among dogs."
+	  },
+	  {
+	    "trial_number": 22,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 0,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Otters have become something of a national obsession in Singapore, to the extent that in early August Singaporeans chose this family, known as the Bishan Ten, as the official emblem of Singapore's 51st year."
+	  },
+	  {
+	    "trial_number": 23,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 3,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "In Singapore, sharks are now rarely seen and occasional sightings still confirm their presence, and it is surprising to note that hammerhead sharks were common in Singapore's past (Tham, 1973b)."
+	  },
+	  {
+	    "trial_number": 24,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 6,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "In Singapore, HDB has a list of approved dog breeds that they approve and you can only keep 1 dog. Flat owners found to breach this regulation can be fined up to a maximum of $4,000. These are mostly the smaller breeds of dogs and breeds such as corgis, huskies and golden retrievers are not on that list."
+	  },
+	  {
+	    "trial_number": 25,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 0,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "at least 50 otters in Singapore"
+	  },
+	  {
+	    "trial_number": 26,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 3,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Hammerhead sharks"
+	  },
+	  {
+	    "trial_number": 27,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 6,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "better low-light vision"
+	  },
+	  {
+	    "trial_number": 28,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 0,
+	    "articles": 1,
+	    "article_to_show": [
+	      0
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Smooth-coated otters are often sighted in Singapore's mangroves, mudflats and coastal areas."
+	  },
+	  {
+	    "trial_number": 29,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 3,
+	    "articles": 1,
+	    "article_to_show": [
+	      3
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Hammerheads have disproportionately small mouths and seem to do a lot of bottom-hunting."
+	  },
+	  {
+	    "trial_number": 30,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 6,
+	    "articles": 1,
+	    "article_to_show": [
+	      6
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Queen Elizabeth II has owned over 30 corgis during her reign."
+	  },
+	  {
+	    "trial_number": 31,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 0,
+	    "articles": 1,
+	    "article_to_show": [
+	      0
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Otters have become something of a national obsession in Singapore, to the extent that in early August Singaporeans chose this family, known as the Bishan Ten, as the official emblem of Singapore's 51st year."
+	  },
+	  {
+	    "trial_number": 32,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 3,
+	    "articles": 1,
+	    "article_to_show": [
+	      3
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Hammerhead sharks are named for the unusual and distinctive structure of their heads, which are flattened and laterally extended into a hammer shape called a cephalofoil. Hammerheads have disproportionately small mouths and seem to do a lot of bottom-hunting. Unlike most sharks, hammerheads usually swim in schools during the day, becoming solitary hunters at night. "
+	  },
+	  {
+	    "trial_number": 33,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 6,
+	    "articles": 1,
+	    "article_to_show": [
+	      6
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Dogs have better low-light vision than humans because of a special light-reflecting layer behind their retinas. Dogs’ only sweat glands are between their paw pads. Dogs can be trained to detect epileptic seizures in humans. Obesity is the #1 health problem among dogs."
+	  },
+	  {
+	    "trial_number": 34,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 0,
+	    "articles": 1,
+	    "article_to_show": [
+	      0
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "chasing each other around in the water"
+	  },
+	  {
+	    "trial_number": 35,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 3,
+	    "articles": 1,
+	    "article_to_show": [
+	      3
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Hammerhead sharks"
+	  },
+	  {
+	    "trial_number": 36,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 6,
+	    "articles": 1,
+	    "article_to_show": [
+	      6
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Obesity"
+	  },
+	  {
+	    "trial_number": 37,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 0,
+	    "articles": 3,
+	    "article_to_show": [
+	      0,
+	      3,
+	      6
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "After dinner, they start to play, chasing each other around in the water - they remind me of a mixture between a dog, a cat and a seal."
+	  },
+	  {
+	    "trial_number": 38,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 3,
+	    "articles": 3,
+	    "article_to_show": [
+	      0,
+	      3,
+	      6
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "In Singapore, sharks are now rarely seen and occasional sightings still confirm their presence, and it is surprising to note that hammerhead sharks were common in Singapore's past (Tham, 1973b)."
+	  },
+	  {
+	    "trial_number": 39,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 6,
+	    "articles": 3,
+	    "article_to_show": [
+	      0,
+	      3,
+	      6
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Queen Elizabeth II has owned over 30 corgis during her reign."
+	  },
+	  {
+	    "trial_number": 40,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 0,
+	    "articles": 3,
+	    "article_to_show": [
+	      0,
+	      3,
+	      6
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Smooth-coated otters are often sighted in Singapore's mangroves, mudflats and coastal areas. The Bishan 10 are the friendliest of the bunch. There are at least 50 otters in Singapore, with families scattered in places such as Punggol, Bishan, Marina Bay, Changi, Kallang and Pasir Ris. Otters have thrived partly due to Singapore's efforts to clean up its water bodies and partly because otters have been forced out of the neighbouring shores of Johor which have undergone development."
+	  },
+	  {
+	    "trial_number": 41,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 3,
+	    "articles": 3,
+	    "article_to_show": [
+	      0,
+	      3,
+	      6
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Hammerhead sharks are named for the unusual and distinctive structure of their heads, which are flattened and laterally extended into a hammer shape called a cephalofoil. Hammerheads have disproportionately small mouths and seem to do a lot of bottom-hunting. Unlike most sharks, hammerheads usually swim in schools during the day, becoming solitary hunters at night. "
+	  },
+	  {
+	    "trial_number": 42,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 6,
+	    "articles": 3,
+	    "article_to_show": [
+	      0,
+	      3,
+	      6
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Dogs have better low-light vision than humans because of a special light-reflecting layer behind their retinas. Dogs’ only sweat glands are between their paw pads. Dogs can be trained to detect epileptic seizures in humans. Obesity is the #1 health problem among dogs."
+	  },
+	  {
+	    "trial_number": 43,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 0,
+	    "articles": 3,
+	    "article_to_show": [
+	      0,
+	      3,
+	      6
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "official emblem of Singapore's 51st year"
+	  },
+	  {
+	    "trial_number": 44,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 3,
+	    "articles": 3,
+	    "article_to_show": [
+	      0,
+	      3,
+	      6
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "swim in schools"
+	  },
+	  {
+	    "trial_number": 45,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 6,
+	    "articles": 3,
+	    "article_to_show": [
+	      0,
+	      3,
+	      6
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Obesity"
+	  },
+	  {
+	    "trial_number": 46,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 0,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "The Bishan 10 are the friendliest of the bunch."
+	  },
+	  {
+	    "trial_number": 47,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 3,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Hammerheads have disproportionately small mouths and seem to do a lot of bottom-hunting."
+	  },
+	  {
+	    "trial_number": 48,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 6,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Dogs have better low-light vision than humans because of a special light-reflecting layer behind their retinas."
+	  },
+	  {
+	    "trial_number": 49,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 0,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "When you spot an otter in the evening, you get a proper show. They always seem to follow a similar pattern of behaviour. First they'll catch some fish, and proceed to happily tear them to pieces and devour them, either on the shore or in the water. After dinner, they start to play, chasing each other around in the water - they remind me of a mixture between a dog, a cat and a seal. After about half an hour of this, and just as twilight begins to settle in, they'll scramble up the bank, find a bit of bare earth, and start to roll around until they're coated in fine sand. A bit more frolicking, and then suddenly, just like that, it's time to go - they vanish down into the water, or under a bridge, in the space of a minute or two."
+	  },
+	  {
+	    "trial_number": 50,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 3,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Hammerhead sharks are named for the unusual and distinctive structure of their heads, which are flattened and laterally extended into a hammer shape called a cephalofoil. Hammerheads have disproportionately small mouths and seem to do a lot of bottom-hunting. Unlike most sharks, hammerheads usually swim in schools during the day, becoming solitary hunters at night. "
+	  },
+	  {
+	    "trial_number": 51,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 6,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Queen Elizabeth II has owned over 30 corgis during her reign. The corgis enjoy a privileged life in Buckingham Palace. They reside in the Corgi Room. The royal corgis have an extensive menu at the palace which includes fresh rabbit and beef, served by a gourmet chef. At Christmas, the Queen makes stockings for pets full of toys and delicacies such as biscuits."
+	  },
+	  {
+	    "trial_number": 52,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 0,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "chasing each other around in the water"
+	  },
+	  {
+	    "trial_number": 53,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 3,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "solitary hunters at night"
+	  },
+	  {
+	    "trial_number": 54,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 6,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "better low-light vision"
+	  },
+	  {
+	    "trial_number": 55,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 1,
+	    "articles": 1,
+	    "article_to_show": [
+	      1
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Some states in American such as Missouri allow you to keep river otters as pets."
+	  },
+	  {
+	    "trial_number": 56,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 4,
+	    "articles": 1,
+	    "article_to_show": [
+	      4
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "The commonly seen sharks on Singapore's shores are the Bamboo sharks and Black tipped reef sharks."
+	  },
+	  {
+	    "trial_number": 57,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 7,
+	    "articles": 1,
+	    "article_to_show": [
+	      7
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "When cats bump you with the front part of their head - bunting, that is when they are truly showing affection."
+	  },
+	  {
+	    "trial_number": 58,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 1,
+	    "articles": 1,
+	    "article_to_show": [
+	      1
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "They are the smallest otter species in the world. Its paws are a distinctive feature, its claws not extending beyond the fleshy end pads of its partially webbed fingers and toes. This gives it a high degree of manual dexterity so that it can use its paws to feed on molluscs, crabs and other small aquatic animals."
+	  },
+	  {
+	    "trial_number": 59,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 4,
+	    "articles": 1,
+	    "article_to_show": [
+	      4
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "The commonly seen sharks on Singapore's shores are the Bamboo sharks and Black tipped reef sharks. Bamboo sharks are sometimes seen by divers at Pulau Hantu. Black tipped reef sharks are sometimes encountered when we visit the Southern submerged reefs at low tide. These sharks appear to hunt fish in low water, thus staying in the shallows at moderate tides or coming in with the tide."
+	  },
+	  {
+	    "trial_number": 60,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 7,
+	    "articles": 1,
+	    "article_to_show": [
+	      7
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Cats are not allowed in HDB flats. Reasons given by HDB is that they are generally difficult to contain within the flat, shed fur and caterwaul during mating season."
+	  },
+	  {
+	    "trial_number": 61,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 1,
+	    "articles": 1,
+	    "article_to_show": [
+	      1
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Wildlife Hobby Permit"
+	  },
+	  {
+	    "trial_number": 62,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 4,
+	    "articles": 1,
+	    "article_to_show": [
+	      4
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "skeletons made of cartilage"
+	  },
+	  {
+	    "trial_number": 63,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 7,
+	    "articles": 1,
+	    "article_to_show": [
+	      7
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "average of 13 – 16 hours a day"
+	  },
+	  {
+	    "trial_number": 64,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 1,
+	    "articles": 3,
+	    "article_to_show": [
+	      1,
+	      4,
+	      7
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "They are the smallest otter species in the world."
+	  },
+	  {
+	    "trial_number": 65,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 4,
+	    "articles": 3,
+	    "article_to_show": [
+	      1,
+	      4,
+	      7
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "The commonly seen sharks on Singapore's shores are the Bamboo sharks and Black tipped reef sharks."
+	  },
+	  {
+	    "trial_number": 66,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 7,
+	    "articles": 3,
+	    "article_to_show": [
+	      1,
+	      4,
+	      7
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Cats enjoy sleeping more than their daily activities of hunting, playing and eating."
+	  },
+	  {
+	    "trial_number": 67,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 1,
+	    "articles": 3,
+	    "article_to_show": [
+	      1,
+	      4,
+	      7
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "All the limelight on the smooth-coated otters may lead people to think that there is only one species of otter in Singapore. However, there are in fact two species that can be found here. They are the smooth-coated otters, and the more elusive Asian small-clawed otters."
+	  },
+	  {
+	    "trial_number": 68,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 4,
+	    "articles": 3,
+	    "article_to_show": [
+	      1,
+	      4,
+	      7
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "There are more than 465 known species of sharks living in our oceans today. Sharks belong to a family of fish that have skeletons made of cartilage, a tissue more flexible and lighter than bone. All sharks have multiple rows of teeth, and while they lose teeth on a regular basis, new teeth continue to grow in and replace those they lose."
+	  },
+	  {
+	    "trial_number": 69,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 7,
+	    "articles": 3,
+	    "article_to_show": [
+	      1,
+	      4,
+	      7
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Cats are not allowed in HDB flats. Reasons given by HDB is that they are generally difficult to contain within the flat, shed fur and caterwaul during mating season."
+	  },
+	  {
+	    "trial_number": 70,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 1,
+	    "articles": 3,
+	    "article_to_show": [
+	      1,
+	      4,
+	      7
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "keep river otters as pets"
+	  },
+	  {
+	    "trial_number": 71,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 4,
+	    "articles": 3,
+	    "article_to_show": [
+	      1,
+	      4,
+	      7
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "skeletons made of cartilage"
+	  },
+	  {
+	    "trial_number": 72,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 7,
+	    "articles": 3,
+	    "article_to_show": [
+	      1,
+	      4,
+	      7
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "not allowed in HDB flats"
+	  },
+	  {
+	    "trial_number": 73,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 1,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "They are the smallest otter species in the world."
+	  },
+	  {
+	    "trial_number": 74,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 4,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "All sharks have multiple rows of teeth, and while they lose teeth on a regular basis, new teeth continue to grow in and replace those they lose."
+	  },
+	  {
+	    "trial_number": 75,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 7,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Reasons given by HDB is that they are generally difficult to contain within the flat, shed fur and caterwaul during mating season."
+	  },
+	  {
+	    "trial_number": 76,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 1,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "They are the smallest otter species in the world. Its paws are a distinctive feature, its claws not extending beyond the fleshy end pads of its partially webbed fingers and toes. This gives it a high degree of manual dexterity so that it can use its paws to feed on molluscs, crabs and other small aquatic animals."
+	  },
+	  {
+	    "trial_number": 77,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 4,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "The commonly seen sharks on Singapore's shores are the Bamboo sharks and Black tipped reef sharks. Bamboo sharks are sometimes seen by divers at Pulau Hantu. Black tipped reef sharks are sometimes encountered when we visit the Southern submerged reefs at low tide. These sharks appear to hunt fish in low water, thus staying in the shallows at moderate tides or coming in with the tide."
+	  },
+	  {
+	    "trial_number": 78,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 7,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Cats enjoy sleeping more than their daily activities of hunting, playing and eating. A domesticated cat sleeps for an average of 13 – 16 hours a day. When cats bump you with the front part of their head - bunting, that is when they are truly showing affection. Cats that roll onto their backs and stretches out in front of you (with their belly area exposed) is saying - I'm happy and secure."
+	  },
+	  {
+	    "trial_number": 79,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 1,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "elusive Asian small-clawed otters"
+	  },
+	  {
+	    "trial_number": 80,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 4,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "multiple rows of teeth"
+	  },
+	  {
+	    "trial_number": 81,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 7,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "belly area exposed"
+	  },
+	  {
+	    "trial_number": 82,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 1,
+	    "articles": 1,
+	    "article_to_show": [
+	      1
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Its paws are a distinctive feature, its claws not extending beyond the fleshy end pads of its partially webbed fingers and toes."
+	  },
+	  {
+	    "trial_number": 83,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 4,
+	    "articles": 1,
+	    "article_to_show": [
+	      4
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Black tipped reef sharks are sometimes encountered when we visit the Southern submerged reefs at low tide."
+	  },
+	  {
+	    "trial_number": 84,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 7,
+	    "articles": 1,
+	    "article_to_show": [
+	      7
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "When cats bump you with the front part of their head - bunting, that is when they are truly showing affection."
+	  },
+	  {
+	    "trial_number": 85,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 1,
+	    "articles": 1,
+	    "article_to_show": [
+	      1
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "They are the smallest otter species in the world. Its paws are a distinctive feature, its claws not extending beyond the fleshy end pads of its partially webbed fingers and toes. This gives it a high degree of manual dexterity so that it can use its paws to feed on molluscs, crabs and other small aquatic animals."
+	  },
+	  {
+	    "trial_number": 86,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 4,
+	    "articles": 1,
+	    "article_to_show": [
+	      4
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "There are more than 465 known species of sharks living in our oceans today. Sharks belong to a family of fish that have skeletons made of cartilage, a tissue more flexible and lighter than bone. All sharks have multiple rows of teeth, and while they lose teeth on a regular basis, new teeth continue to grow in and replace those they lose."
+	  },
+	  {
+	    "trial_number": 87,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 7,
+	    "articles": 1,
+	    "article_to_show": [
+	      7
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Cats are not allowed in HDB flats. Reasons given by HDB is that they are generally difficult to contain within the flat, shed fur and caterwaul during mating season."
+	  },
+	  {
+	    "trial_number": 88,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 1,
+	    "articles": 1,
+	    "article_to_show": [
+	      1
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "partially webbed fingers and toes"
+	  },
+	  {
+	    "trial_number": 89,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 4,
+	    "articles": 1,
+	    "article_to_show": [
+	      4
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "multiple rows of teeth"
+	  },
+	  {
+	    "trial_number": 90,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 7,
+	    "articles": 1,
+	    "article_to_show": [
+	      7
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "enjoy sleeping more"
+	  },
+	  {
+	    "trial_number": 91,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 1,
+	    "articles": 3,
+	    "article_to_show": [
+	      1,
+	      4,
+	      7
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "They are the smallest otter species in the world."
+	  },
+	  {
+	    "trial_number": 92,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 4,
+	    "articles": 3,
+	    "article_to_show": [
+	      1,
+	      4,
+	      7
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Black tipped reef sharks are sometimes encountered when we visit the Southern submerged reefs at low tide."
+	  },
+	  {
+	    "trial_number": 93,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 7,
+	    "articles": 3,
+	    "article_to_show": [
+	      1,
+	      4,
+	      7
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Cats enjoy sleeping more than their daily activities of hunting, playing and eating."
+	  },
+	  {
+	    "trial_number": 94,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 1,
+	    "articles": 3,
+	    "article_to_show": [
+	      1,
+	      4,
+	      7
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Some states in American such as Missouri allow you to keep river otters as pets. All you need to do is obtain a Wildlife Hobby Permit, and that authorizes you to hold no more than one red or grey fox, coyote, beaver, river otter, Eastern grey squirrel, bobcat, badger, or opossum for personal use. (MO - Exotic pet - 578.023)"
+	  },
+	  {
+	    "trial_number": 95,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 4,
+	    "articles": 3,
+	    "article_to_show": [
+	      1,
+	      4,
+	      7
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "There are more than 465 known species of sharks living in our oceans today. Sharks belong to a family of fish that have skeletons made of cartilage, a tissue more flexible and lighter than bone. All sharks have multiple rows of teeth, and while they lose teeth on a regular basis, new teeth continue to grow in and replace those they lose."
+	  },
+	  {
+	    "trial_number": 96,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 7,
+	    "articles": 3,
+	    "article_to_show": [
+	      1,
+	      4,
+	      7
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Cats enjoy sleeping more than their daily activities of hunting, playing and eating. A domesticated cat sleeps for an average of 13 – 16 hours a day. When cats bump you with the front part of their head - bunting, that is when they are truly showing affection. Cats that roll onto their backs and stretches out in front of you (with their belly area exposed) is saying - I'm happy and secure."
+	  },
+	  {
+	    "trial_number": 97,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 1,
+	    "articles": 3,
+	    "article_to_show": [
+	      1,
+	      4,
+	      7
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "smallest otter species"
+	  },
+	  {
+	    "trial_number": 98,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 4,
+	    "articles": 3,
+	    "article_to_show": [
+	      1,
+	      4,
+	      7
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "skeletons made of cartilage"
+	  },
+	  {
+	    "trial_number": 99,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 7,
+	    "articles": 3,
+	    "article_to_show": [
+	      1,
+	      4,
+	      7
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "average of 13 – 16 hours a day"
+	  },
+	  {
+	    "trial_number": 100,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 1,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "All the limelight on the smooth-coated otters may lead people to think that there is only one species of otter in Singapore."
+	  },
+	  {
+	    "trial_number": 101,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 4,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Sharks belong to a family of fish that have skeletons made of cartilage, a tissue more flexible and lighter than bone."
+	  },
+	  {
+	    "trial_number": 102,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 7,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "A domesticated cat sleeps for an average of 13 – 16 hours a day."
+	  },
+	  {
+	    "trial_number": 103,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 1,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "They are the smallest otter species in the world. Its paws are a distinctive feature, its claws not extending beyond the fleshy end pads of its partially webbed fingers and toes. This gives it a high degree of manual dexterity so that it can use its paws to feed on molluscs, crabs and other small aquatic animals."
+	  },
+	  {
+	    "trial_number": 104,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 4,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "There are more than 465 known species of sharks living in our oceans today. Sharks belong to a family of fish that have skeletons made of cartilage, a tissue more flexible and lighter than bone. All sharks have multiple rows of teeth, and while they lose teeth on a regular basis, new teeth continue to grow in and replace those they lose."
+	  },
+	  {
+	    "trial_number": 105,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 7,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Cats are not allowed in HDB flats. Reasons given by HDB is that they are generally difficult to contain within the flat, shed fur and caterwaul during mating season."
+	  },
+	  {
+	    "trial_number": 106,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 1,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "smallest otter species"
+	  },
+	  {
+	    "trial_number": 107,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 4,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "465 known species of sharks"
+	  },
+	  {
+	    "trial_number": 108,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 7,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "average of 13 – 16 hours a day"
+	  },
+	  {
+	    "trial_number": 109,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 2,
+	    "articles": 1,
+	    "article_to_show": [
+	      2
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Otters have long, slim bodies and relatively short limbs."
+	  },
+	  {
+	    "trial_number": 110,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 5,
+	    "articles": 1,
+	    "article_to_show": [
+	      5
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Sea turtles can not retract their head, legs, and arms into their shells like other turtles."
+	  },
+	  {
+	    "trial_number": 111,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 8,
+	    "articles": 1,
+	    "article_to_show": [
+	      8
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Dugongs eat only seagrasses, and thus sometimes called sea cows!"
+	  },
+	  {
+	    "trial_number": 112,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 2,
+	    "articles": 1,
+	    "article_to_show": [
+	      2
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "There are 13 still existing otter species are all semiaquatic, aquatic or marine, with diets based on fish and invertebrates. All the 13 different species are either endangered, near threatened and vulnerable. Only the North American River Otter has a stable population trend. (ICUN Otter Specialist Group)"
+	  },
+	  {
+	    "trial_number": 113,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 5,
+	    "articles": 1,
+	    "article_to_show": [
+	      5
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Sea turtles can be found in all oceans except for the polar regions. They mostly can be found in coral reefs. Leatherback turtles feed almost exclusively on jellyfish. Hawksbills principally eat sponges. The rest of the sea turtles are omnivorous. A sleeping sea turtle can remain underwater for 4–7 hours. Sea turtles can not retract their head, legs, and arms into their shells like other turtles."
+	  },
+	  {
+	    "trial_number": 114,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 8,
+	    "articles": 1,
+	    "article_to_show": [
+	      8
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Sometimes confused with the manatee. The manatee has a circular tail while dugongs have a dolphin-like tail."
+	  },
+	  {
+	    "trial_number": 115,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 2,
+	    "articles": 1,
+	    "article_to_show": [
+	      2
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "seal-like abilities holding breath underwater"
+	  },
+	  {
+	    "trial_number": 116,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 5,
+	    "articles": 1,
+	    "article_to_show": [
+	      5
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "found in coral reefs"
+	  },
+	  {
+	    "trial_number": 117,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 8,
+	    "articles": 1,
+	    "article_to_show": [
+	      8
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "large, grinding teeth"
+	  },
+	  {
+	    "trial_number": 118,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 2,
+	    "articles": 3,
+	    "article_to_show": [
+	      2,
+	      5,
+	      8
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "There are 13 still existing otter species are all semiaquatic, aquatic or marine, with diets based on fish and invertebrates."
+	  },
+	  {
+	    "trial_number": 119,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 5,
+	    "articles": 3,
+	    "article_to_show": [
+	      2,
+	      5,
+	      8
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "A sleeping sea turtle can remain underwater for 4–7 hours."
+	  },
+	  {
+	    "trial_number": 120,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 8,
+	    "articles": 3,
+	    "article_to_show": [
+	      2,
+	      5,
+	      8
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "The manatee has a circular tail while dugongs have a dolphin-like tail."
+	  },
+	  {
+	    "trial_number": 121,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 2,
+	    "articles": 3,
+	    "article_to_show": [
+	      2,
+	      5,
+	      8
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "There are 13 still existing otter species are all semiaquatic, aquatic or marine, with diets based on fish and invertebrates. All the 13 different species are either endangered, near threatened and vulnerable. Only the North American River Otter has a stable population trend. (ICUN Otter Specialist Group)"
+	  },
+	  {
+	    "trial_number": 122,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 5,
+	    "articles": 3,
+	    "article_to_show": [
+	      2,
+	      5,
+	      8
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Sea turtles can be found in all oceans except for the polar regions. They mostly can be found in coral reefs. Leatherback turtles feed almost exclusively on jellyfish. Hawksbills principally eat sponges. The rest of the sea turtles are omnivorous. A sleeping sea turtle can remain underwater for 4–7 hours. Sea turtles can not retract their head, legs, and arms into their shells like other turtles."
+	  },
+	  {
+	    "trial_number": 123,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 8,
+	    "articles": 3,
+	    "article_to_show": [
+	      2,
+	      5,
+	      8
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Although rarely seen, signs of dugongs are often encountered on our seagrass meadows. Dugongs eat only seagrasses, and thus sometimes called sea cows! They leave a typical feeding trail in the meadows and we have seen fresh trails on Chek Jawa and even mainland shores like Changi. As well as meadows in the south like Pulau Semakau and Cyrene Reef and other submerged reefs."
+	  },
+	  {
+	    "trial_number": 124,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 2,
+	    "articles": 3,
+	    "article_to_show": [
+	      2,
+	      5,
+	      8
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "13 still existing otter species"
+	  },
+	  {
+	    "trial_number": 125,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 5,
+	    "articles": 3,
+	    "article_to_show": [
+	      2,
+	      5,
+	      8
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "underwater for 4–7 hours"
+	  },
+	  {
+	    "trial_number": 126,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 8,
+	    "articles": 3,
+	    "article_to_show": [
+	      2,
+	      5,
+	      8
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "confused with the manatee"
+	  },
+	  {
+	    "trial_number": 127,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 2,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "There are 13 still existing otter species are all semiaquatic, aquatic or marine, with diets based on fish and invertebrates."
+	  },
+	  {
+	    "trial_number": 128,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 5,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Sea turtles can not retract their head, legs, and arms into their shells like other turtles."
+	  },
+	  {
+	    "trial_number": 129,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 8,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Dugongs eat only seagrasses, and thus sometimes called sea cows!"
+	  },
+	  {
+	    "trial_number": 130,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 2,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Otters have long, slim bodies and relatively short limbs. Their most striking anatomical features are the powerful webbed feet used to swim, and their seal-like abilities holding breath underwater. Most have sharp claws on their feet and all except the sea otter have long, muscular tails."
+	  },
+	  {
+	    "trial_number": 131,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 5,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "4 out of 7 species of marine turtles can be found in Singapore. The hawksbill, loggerhead, green turtle and leatherback traverse Singapore seas, feeding, resting and even nesting between their long journeys."
+	  },
+	  {
+	    "trial_number": 132,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 8,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "A dugong's mouth faces downwards to munch on seagrass and it has large, grinding teeth that grow continuously. Its digestive system is also adapted for tackling seagrass. The dugong is the only herbivorous mammal that is strictly marine."
+	  },
+	  {
+	    "trial_number": 133,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 2,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "seal-like abilities holding breath underwater"
+	  },
+	  {
+	    "trial_number": 134,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 5,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "underwater for 4–7 hours"
+	  },
+	  {
+	    "trial_number": 135,
+	    "technique": "AUTOCOMPASTE",
+	    "article_chosen": 8,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "herbivorous mammal"
+	  },
+	  {
+	    "trial_number": 136,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 2,
+	    "articles": 1,
+	    "article_to_show": [
+	      2
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Otters have long, slim bodies and relatively short limbs."
+	  },
+	  {
+	    "trial_number": 137,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 5,
+	    "articles": 1,
+	    "article_to_show": [
+	      5
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Sea turtles can not retract their head, legs, and arms into their shells like other turtles."
+	  },
+	  {
+	    "trial_number": 138,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 8,
+	    "articles": 1,
+	    "article_to_show": [
+	      8
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "A dugong's mouth faces downwards to munch on seagrass and it has large, grinding teeth that grow continuously."
+	  },
+	  {
+	    "trial_number": 139,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 2,
+	    "articles": 1,
+	    "article_to_show": [
+	      2
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "There are 13 still existing otter species are all semiaquatic, aquatic or marine, with diets based on fish and invertebrates. All the 13 different species are either endangered, near threatened and vulnerable. Only the North American River Otter has a stable population trend. (ICUN Otter Specialist Group)"
+	  },
+	  {
+	    "trial_number": 140,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 5,
+	    "articles": 1,
+	    "article_to_show": [
+	      5
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "4 out of 7 species of marine turtles can be found in Singapore. The hawksbill, loggerhead, green turtle and leatherback traverse Singapore seas, feeding, resting and even nesting between their long journeys."
+	  },
+	  {
+	    "trial_number": 141,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 8,
+	    "articles": 1,
+	    "article_to_show": [
+	      8
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Sometimes confused with the manatee. The manatee has a circular tail while dugongs have a dolphin-like tail."
+	  },
+	  {
+	    "trial_number": 142,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 2,
+	    "articles": 1,
+	    "article_to_show": [
+	      2
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "semiaquatic, aquatic or marine"
+	  },
+	  {
+	    "trial_number": 143,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 5,
+	    "articles": 1,
+	    "article_to_show": [
+	      5
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "feeding, resting and even nesting"
+	  },
+	  {
+	    "trial_number": 144,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 8,
+	    "articles": 1,
+	    "article_to_show": [
+	      8
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "typical feeding trail"
+	  },
+	  {
+	    "trial_number": 145,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 2,
+	    "articles": 3,
+	    "article_to_show": [
+	      2,
+	      5,
+	      8
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Their most striking anatomical features are the powerful webbed feet used to swim, and their seal-like abilities holding breath underwater."
+	  },
+	  {
+	    "trial_number": 146,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 5,
+	    "articles": 3,
+	    "article_to_show": [
+	      2,
+	      5,
+	      8
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Leatherback turtles feed almost exclusively on jellyfish."
+	  },
+	  {
+	    "trial_number": 147,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 8,
+	    "articles": 3,
+	    "article_to_show": [
+	      2,
+	      5,
+	      8
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Dugongs eat only seagrasses, and thus sometimes called sea cows!"
+	  },
+	  {
+	    "trial_number": 148,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 2,
+	    "articles": 3,
+	    "article_to_show": [
+	      2,
+	      5,
+	      8
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "There are 13 still existing otter species are all semiaquatic, aquatic or marine, with diets based on fish and invertebrates. All the 13 different species are either endangered, near threatened and vulnerable. Only the North American River Otter has a stable population trend. (ICUN Otter Specialist Group)"
+	  },
+	  {
+	    "trial_number": 149,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 5,
+	    "articles": 3,
+	    "article_to_show": [
+	      2,
+	      5,
+	      8
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Sea turtles can be found in all oceans except for the polar regions. They mostly can be found in coral reefs. Leatherback turtles feed almost exclusively on jellyfish. Hawksbills principally eat sponges. The rest of the sea turtles are omnivorous. A sleeping sea turtle can remain underwater for 4–7 hours. Sea turtles can not retract their head, legs, and arms into their shells like other turtles."
+	  },
+	  {
+	    "trial_number": 150,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 8,
+	    "articles": 3,
+	    "article_to_show": [
+	      2,
+	      5,
+	      8
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Although rarely seen, signs of dugongs are often encountered on our seagrass meadows. Dugongs eat only seagrasses, and thus sometimes called sea cows! They leave a typical feeding trail in the meadows and we have seen fresh trails on Chek Jawa and even mainland shores like Changi. As well as meadows in the south like Pulau Semakau and Cyrene Reef and other submerged reefs."
+	  },
+	  {
+	    "trial_number": 151,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 2,
+	    "articles": 3,
+	    "article_to_show": [
+	      2,
+	      5,
+	      8
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "seal-like abilities holding breath underwater"
+	  },
+	  {
+	    "trial_number": 152,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 5,
+	    "articles": 3,
+	    "article_to_show": [
+	      2,
+	      5,
+	      8
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "found in coral reefs"
+	  },
+	  {
+	    "trial_number": 153,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 8,
+	    "articles": 3,
+	    "article_to_show": [
+	      2,
+	      5,
+	      8
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "confused with the manatee"
+	  },
+	  {
+	    "trial_number": 154,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 2,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Otters have long, slim bodies and relatively short limbs."
+	  },
+	  {
+	    "trial_number": 155,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 5,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Sea turtles can not retract their head, legs, and arms into their shells like other turtles."
+	  },
+	  {
+	    "trial_number": 156,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 8,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "sentence",
+	    "data_file": "data/texts.json",
+	    "stimuli": "The manatee has a circular tail while dugongs have a dolphin-like tail."
+	  },
+	  {
+	    "trial_number": 157,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 2,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "There are 13 still existing otter species are all semiaquatic, aquatic or marine, with diets based on fish and invertebrates. All the 13 different species are either endangered, near threatened and vulnerable. Only the North American River Otter has a stable population trend. (ICUN Otter Specialist Group)"
+	  },
+	  {
+	    "trial_number": 158,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 5,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Sea turtles can be found in all oceans except for the polar regions. They mostly can be found in coral reefs. Leatherback turtles feed almost exclusively on jellyfish. Hawksbills principally eat sponges. The rest of the sea turtles are omnivorous. A sleeping sea turtle can remain underwater for 4–7 hours. Sea turtles can not retract their head, legs, and arms into their shells like other turtles."
+	  },
+	  {
+	    "trial_number": 159,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 8,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "paragraph",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Although rarely seen, signs of dugongs are often encountered on our seagrass meadows. Dugongs eat only seagrasses, and thus sometimes called sea cows! They leave a typical feeding trail in the meadows and we have seen fresh trails on Chek Jawa and even mainland shores like Changi. As well as meadows in the south like Pulau Semakau and Cyrene Reef and other submerged reefs."
+	  },
+	  {
+	    "trial_number": 160,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 2,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "long, slim bodies"
+	  },
+	  {
+	    "trial_number": 161,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 5,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "underwater for 4–7 hours"
+	  },
+	  {
+	    "trial_number": 162,
+	    "technique": "TRADITIONAL",
+	    "article_chosen": 8,
+	    "articles": 9,
+	    "article_to_show": [
+	      0,
+	      1,
+	      2,
+	      3,
+	      4,
+	      5,
+	      6,
+	      7,
+	      8
+	    ],
+	    "granularity": "phrase",
+	    "data_file": "data/texts.json",
+	    "stimuli": "Pulau Semakau and Cyrene Reef"
+	  }
+  ]
+}

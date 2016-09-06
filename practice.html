@@ -23,8 +23,8 @@
                         <li><a href="index.html">Welcome</a></li>
                         <li><a href="questionnaire-pre.html">Pre Questionnaire</a></li>
                         <li><a href="instructions.html">Instructions</a></li>
-                        <li><a href="practice.html">Practice Trial</a></li>
-                        <li class="active"><a href="experiment.html">Experiment</a></li>
+                        <li class="active"><a href="practice.html">Practice Trial</a></li>
+                        <li><a href="experiment.html">Experiment</a></li>
                         <li><a href="questionnaire-post.html">Post Questionnaire</a></li>
                     </ul>
                 </div>
@@ -88,20 +88,15 @@
                             'Article Chosen', 'Trial no', 'Stimuli', 'User Response', 'Trial Start Time',
                             'Trial End Time', 'Trial Time', 'Accuracy'];
             var trialData = [];
-            var flag = 2;
-            var nextAdd = 3;
 
             function next () {
                 if (currentTrial !== 0) {
                     // Save results of current trial
                     var trialResult = ACPToolKit.getCurrentTrialState();
 
-                    console.log("trialResult", trialResult);
                     var technique = trialResult.technique;
                     var granularity = trialResult.granularity;
                     var trialNum = currentTrial;
-                    var numberOfArticles = trialResult.articles;
-                    var articleChosen = trialResult.article_to_show.toString();
                     var stimuli = trialResult.stimuli;
                     var userResponse = trialResult.user_response;
                     var trialStartTime = trialResult.start_time;
@@ -109,47 +104,37 @@
                     var trialDuration = trialResult.duration;
                     var accuracy = stimuli === userResponse ? 1 : 0;
 
-                    var row = [participantId, technique, granularity, numberOfArticles, 
-                                articleChosen, trialNum, stimuli, userResponse, trialStartTime,
+                    var row = [participantId, technique, granularity, trialNum,
+                                stimuli, userResponse, trialStartTime,
                                 trialEndTime, trialDuration, accuracy];
                     trialData.push(row);
                 }
 
-                if (currentTrial == flag) {
-                    return;
-                }
-
                 if (currentTrial < totalNumberOfTrials) {
+                    console.log("trialsData[currentTrial]", trialsData[currentTrial]);
+
                     // Show the next trial
+                    console.log(ACPToolKit);
                     ACPToolKit.presentTrial(trialsData[currentTrial]);
                     currentTrial += 1;
                     $('.js-expt-current-trial').text(currentTrial);
                 } else {
                     // Last trial completed
                     ACPToolKit.downloadTrialResults(trialData);
-                    window.location = 'questionnaire-post.html';
+                    window.location = 'experiment.html';
                 }
             }
 
-
-            //assume have button
-            //resume next() call
-            function resumeExperiment() {
-                next();
-            }
-
             $(document).ready(function () {
-                // Experiments are arranged differently in it's respective json file for the different participants
-                participantId = ACPToolKit.getCurrentParticipantId();
-                var participantExperimentJSON = 'data/experiments' + participantId + '.json';
-                console.log(participantExperimentJSON);
+                var experimentJSON = 'data/practice/experiments.json';
 
-                $.get(participantExperimentJSON, function (data) {
+                $.get(experimentJSON, function (data) {
                     // Initialise experiments
                     // TO REVERT WHEN HOSTING
                     //trialsData = data.experiments;
                     // FOR LOCAL TESTING??? Doesn't work
                     trialsData = $.parseJSON(data).experiments;
+                    console.log("trialsData", trialsData);
 
                     currentTrial = 0;
                     totalNumberOfTrials = trialsData.length;

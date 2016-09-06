@@ -1,0 +1,89 @@
+{
+    "experiments": [
+        { 
+            "technique": "AUTOCOMPASTE",
+            "article_chosen": 0,
+            "articles": 1,
+            "article_to_show": [
+              0
+            ], 
+            "granularity": "sentence",
+            "data_file": "data/practice/texts.json",
+            "stimuli": "What is acceptor atoms?" 
+        },
+        { 
+            "technique": "AUTOCOMPASTE", 
+            "article_chosen": 0,
+            "articles": 3,
+            "article_to_show": [
+              0,
+              1,
+              2
+            ], 
+            "granularity": "paragraph",
+            "data_file": "data/practice/texts.json",
+            "stimuli": "What is AC coupling? Circuit that passes an AC signal while blocking a DC voltage." 
+        },
+        { 
+            "technique": "AUTOCOMPASTE", 
+            "article_chosen": 3,
+            "articles": 3,
+            "article_to_show": [
+              3,
+              4,
+              5
+            ], 
+            "granularity": "phrase",
+            "data_file": "data/practice/texts.json",
+            "stimuli": "number of positive charges" 
+        },
+        { 
+            "technique": "TRADITIONAL", 
+            "article_chosen": 0,
+            "articles": 6,
+            "article_to_show": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ], 
+            "granularity": "sentence",
+            "data_file": "data/practice/texts.json",
+            "stimuli": "What is acceptor atoms?" 
+        },
+        { 
+            "technique": "TRADITIONAL", 
+            "article_chosen": 0,
+            "articles": 6,
+            "article_to_show": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ], 
+            "granularity": "paragraph",
+            "data_file": "data/practice/texts.json",
+            "stimuli": "What is AC coupling? Circuit that passes an AC signal while blocking a DC voltage." 
+        },
+        { 
+            "technique": "TRADITIONAL", 
+            "article_chosen": 3,
+            "articles": 6,
+            "article_to_show": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ], 
+            "granularity": "phrase",
+            "data_file": "data/practice/texts.json",
+            "stimuli": "number of positive charges" 
+        }        
+    ]
+}

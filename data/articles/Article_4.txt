@@ -1,15 +1,3 @@
-What is atomic number? The number of positive charges or protons in the nucleus of an atom.
+Hammerhead sharks are named for the unusual and distinctive structure of their heads, which are flattened and laterally extended into a hammer shape called a cephalofoil. Hammerheads have disproportionately small mouths and seem to do a lot of bottom-hunting. Unlike most sharks, hammerheads usually swim in schools during the day, becoming solitary hunters at night. 
 
-What is attenuate? To reduce the amplitude of an action or signal. The opposite of amplification.
-
-What is audio? Relating to frequencies that can be heard by the human ear. Approximately 20 Hz to 20 kHz.
-
-What is autotransformer? A single winding transformer where the output is taken from taps on the winding.
-
-What is average value? A value of voltage or current where the area of the wave above the value equals the area of the wave below the value.
-
-What is avionics? Aviation electronics.
-
-What is balanced bridge? Condition that occurs when a bridge circuit is adjusted to produce a zero output.
-
-What is band-pass filter? A tuned circuit designed to pass a band of frequencies between a lower cut-off frequency (f1) and a higher cut-off frequency (f2). Frequencies above and below the pass band are heavily attenuated.
+In Singapore, sharks are now rarely seen and occasional sightings still confirm their presence, and it is surprising to note that hammerhead sharks were common in Singapore's past (Tham, 1973b). 

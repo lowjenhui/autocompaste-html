@@ -33,7 +33,8 @@ AutoComPaste.Interface = (function () {
   /**
    * The class constructor.
    */
-  function Interface (wm, engine, texts_json) {
+  function Interface (wm, engine, texts_json, article_to_show) {
+    console.log("JSON input", texts_json);
     /** Internal functions */
     this._showError = function _showerror() {
       document.getElementById('error-overlay').style.display = 'block';
@@ -109,11 +110,56 @@ AutoComPaste.Interface = (function () {
         //
         // For every text that we find, we create a new window for it.
         console.log("Interface._fetchTextComplete: Finished fetching all texts");
-
+        console.log(privates);
+        console.log(privates.texts);
         for (var text_title in privates.texts) {
-          if (privates.texts.hasOwnProperty(text_title)) {
-            console.log("Interface._fetchTextComplete: Creating window for text \"" + text_title + "\"");
-            iface._createWindowForText(text_title);
+
+          // Getting back the article numbers
+          var articleNumber = 0;
+          switch(text_title) {
+              case "Data 1":
+              case "Smooth Coated Otters":
+                  articleNumber = 0;
+                  break;
+              case "Data 2":
+              case "Asian Small-clawed Otters":
+                  articleNumber = 1;
+                  break;
+              case "Article 3":
+              case "Otters":
+                  articleNumber = 2;
+                  break;
+              case "Article 4":
+              case "Hammerhead Sharks":
+                  articleNumber = 3;
+                  break;
+              case "Article 5":
+              case "Sharks":
+                  articleNumber = 4;
+                  break;
+              case "Article 6":
+              case "Turtles":
+                  articleNumber = 5;
+                  break;
+              case "Dogs":
+                  articleNumber = 6;
+                  break;
+              case "Cats":
+                  articleNumber = 7;
+                  break;
+              case "Dugongs":
+                  articleNumber = 8;
+                  break;
+              default:
+                  console.log("Invalid Article Number");
+          }
+          
+          //Only display article if it is chosen in the articles to show
+          if ($.inArray(articleNumber, article_to_show) != -1) {
+            if (privates.texts.hasOwnProperty(text_title)) {
+              console.log("Interface._fetchTextComplete: Creating window for text \"" + text_title + "\"");
+              iface._createWindowForText(text_title);
+            }
           }
         }
 
@@ -140,6 +186,7 @@ AutoComPaste.Interface = (function () {
         privates.wm.createWindow("text_editor");
         privates.wm.setWindowTitle("text_editor", "Text Editor");
         privates.wm.setWindowContent('text_editor', acp_textarea);
+        privates.wm.moveWindowTo("text_editor", 20, -10);
         acp_textarea.focus();
 
         // Dispatch an event.

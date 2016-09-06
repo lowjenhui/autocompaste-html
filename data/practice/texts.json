@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Data 1",
+        "url": "data/practice/articles/data1.txt"
+    },
+    {
+        "title": "Data 2",
+        "url": "data/practice/articles/data2.txt"
+    },
+    {
+        "title": "Article 3",
+        "url": "data/practice/articles/Article_3.txt"
+    },
+    {
+        "title": "Article 4",
+        "url": "data/practice/articles/Article_4.txt"
+    },
+    {
+        "title": "Article 5",
+        "url": "data/practice/articles/Article_5.txt"
+    },
+    {
+        "title": "Article 6",
+        "url": "data/practice/articles/Article_6.txt"
+    }
+]

@@ -20,12 +20,32 @@ body.experiment-page {
   margin-bottom: 0;
 }
 
+.bold {
+  font-weight: bold;
+}
+
+.navbar, .navbar-default {
+  text-align: center;
+}
+
+.navbar-collapse.collapse {
+  display: inline-block!important;
+}
+
+.survey-iframe {
+  margin-bottom: 20px;
+}
+
+.next-button {
+  text-align: right;
+}
+
 /**
  * Main ACP styles
  */
 
 #autocompaste {
-  background-color: #ccc;
+  background-color: #444;
   margin: 0;
   padding: 0;
 }
@@ -50,7 +70,7 @@ body.experiment-page {
 }
 
 #autocompaste-display > .wm-window .modal-header:hover {
-  background-color: #f0f0f0;
+  background-color: #a6cece;
   transition: all .3s;
 }
 
@@ -63,8 +83,18 @@ body.experiment-page {
   overflow-y: auto;
 }
 
+#autocompaste-display > .wm-window .modal-body pre {
+  white-space: pre-wrap;
+  word-break: normal;
+}
+
 #autocompaste-display > .wm-window .modal-body .highlighted {
   background-color: yellow;
+}
+
+.autocompaste-textarea:focus {
+  outline: none !important;
+  border-color: #579797;
 }
 
 #autocompaste-display.dragging-active > .wm-window .modal-header,
@@ -97,7 +127,7 @@ body.experiment-page {
 
 #autocompaste-completion-list li a:hover {
   color: #333;
-  background-color: #fff;
+  background-color: #a6cece;
 }
 
 #autocompaste-completion-list li a.focused {
@@ -109,6 +139,10 @@ body.experiment-page {
 #autocompaste-display > .wm-window-focused {
   -webkit-filter: brightness(100%);
   transition: -webkit-filter 0.5s;
+}
+
+#autocompaste-display > .wm-window-focused .modal-header {
+  background-color: #8adada;
 }
 
 #autocompaste-display > .wm-window-focused .modal-header h4 {

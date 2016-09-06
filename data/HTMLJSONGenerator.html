@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Experiment JSON Output</title>
+</head>
+<body>
+    <div class="container">
+        <div class="accordion" style="font-size: xx-large;">
+            <span>Experiment 1 - Expand</span>
+        </div>
+        <div class="content" style="display: none;">
+            <pre>{
+                "experiments":</pre>
+                <pre id="JSON1"></pre>
+            <pre>}</pre>
+        </div>
+        <div class="accordion" style="font-size: xx-large;">
+            <span>Experiment 2 - Expand</span>
+        </div>
+        <div class="content" style="display: none;">
+            <pre>{
+                "experiments":</pre>
+                <pre id="JSON2"></pre>
+            <pre>}</pre>
+        </div>
+        <div class="accordion" style="font-size: xx-large;">
+            <span>Experiment 3 - Expand</span>
+        </div>
+        <div class="content" style="display: none;">
+            <pre>{
+                "experiments":</pre>
+                <pre id="JSON3"></pre>
+            <pre>}</pre>
+        </div>
+        <div class="accordion" style="font-size: xx-large;">
+            <span>Experiment 4 - Expand</span>
+        </div>
+        <div class="content" style="display: none;">
+            <pre>{
+                "experiments":</pre>
+                <pre id="JSON4"></pre>
+            <pre>}</pre>
+        </div>
+        <div class="accordion" style="font-size: xx-large;">
+            <span>Experiment 5 - Expand</span>
+        </div>
+        <div class="content" style="display: none;">
+            <pre>{
+                "experiments":</pre>
+                <pre id="JSON5"></pre>
+            <pre>}</pre>
+        </div>
+        <div class="accordion" style="font-size: xx-large;">
+            <span>Experiment 6 - Expand</span>
+        </div>
+        <div class="content" style="display: none;">
+            <pre>{
+                "experiments":</pre>
+                <pre id="JSON6"></pre>
+            <pre>}</pre>
+        </div>
+    </div>
+    
+
+    <script src="../js/vendor/jquery-1.11.2.min.js"></script>
+
+    //accordion dropdown
+    <script type="text/javascript">
+        $(".accordion").click(function () {
+            $accordion = $(this);
+            //getting the next element
+            $content = $accordion.next();
+            //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
+            $content.slideToggle(500, function () {
+                //execute this after slideToggle is done
+                //change text of header based on visibility of content div
+                $accordion.text(function () {
+                    //change text based on condition
+                    return $content.is(":visible") ? "Experiment - Collapse" : "Experiment - Expand";
+                });
+            });
+
+        });
+    </script>
+    <script type="text/javascript">
+        //Need to vary participants (change the granularity rotate array left)
+        //Switch the Technique for participants 4,5,6
+
+        //Desired JSON output
+        // {
+        //     "trial_number": 1,    
+        //     "technique": "TRADITIONAL",
+        //     "article_chosen": 0, 
+        //     "articles": 3,
+        //     "article_to_show": [
+        //         0,
+        //         3,
+        //         6
+        //     ],
+        //     "granularity": "sentence",
+        //     "data_file": "data/texts.json",
+        //     "stimuli": "Otters have become something of a national obsession in Singapore, to the extent that in early August Singaporeans chose this family, known as the Bishan Ten, as the official emblem of Singapore's 51st year."
+        // },
+
+        var experiment = [];
+
+        var block = 0; 
+        var techniqueChosen = 0;
+        var articlesShown = 0;
+        var trial = 0;
+        var trialNumber = 0;
+        var technique = ["TRADITIONAL", "AUTOCOMPASTE"];
+        var granularity = ["phrase", "sentence", "paragraph"];
+        var data_file = "data/texts.json";
+        var stimuli = "";
+        var numberOfArticles = [1,3,9];
+        var threeArticles = [[0,3,6], [1,4,7], [2,5,8]];
+        var articleCategory = ["Smooth Coated Otters", "Asian Small-clawed Otters", "Otters", "Hammerhead Sharks", "Sharks", "Turtles", "Dogs", "Cats", "Dugongs"];
+
+        var phrases = [
+            ["Bishan Ten", "official emblem of Singapore's 51st year", "at least 50 otters in Singapore", "efforts to clean up its water bodies", "chasing each other around in the water"],
+            ["elusive Asian small-clawed otters", "keep river otters as pets", "partially webbed fingers and toes", "Wildlife Hobby Permit", "smallest otter species"],
+            ["long, slim bodies", "seal-like abilities holding breath underwater", "13 still existing otter species", "ICUN Otter Specialist Group", "semiaquatic, aquatic or marine"],
+            ["Hammerhead sharks", "disproportionately small mouths", "swim in schools", "solitary hunters at night", "common in Singapore's past"],
+            ["465 known species of sharks", "multiple rows of teeth", "skeletons made of cartilage", "Bamboo sharks and Black tipped reef sharks", "divers at Pulau Hantu"],
+            ["underwater for 4–7 hours", "can not retract their head, legs, and arms", "found in coral reefs", "traverse Singapore seas", "feeding, resting and even nesting"],
+            ["better low-light vision", "detect epileptic seizures", "Obesity", "royal corgis", "HDB has a list of approved dog breeds"],
+            ["enjoy sleeping more", "average of 13 – 16 hours a day", "bunting", "belly area exposed", "not allowed in HDB flats"],
+            ["large, grinding teeth", "confused with the manatee", "typical feeding trail", "Pulau Semakau and Cyrene Reef", "herbivorous mammal"]
+        ];
+
+        var sentences = [
+            ["Otters have become something of a national obsession in Singapore, to the extent that in early August Singaporeans chose this family, known as the Bishan Ten, as the official emblem of Singapore's 51st year.", "Smooth-coated otters are often sighted in Singapore's mangroves, mudflats and coastal areas.", "There are at least 50 otters in Singapore, with families scattered in places such as Punggol, Bishan, Marina Bay, Changi, Kallang and Pasir Ris.", "The Bishan 10 are the friendliest of the bunch.", "After dinner, they start to play, chasing each other around in the water - they remind me of a mixture between a dog, a cat and a seal."],
+            ["All the limelight on the smooth-coated otters may lead people to think that there is only one species of otter in Singapore.", "Some states in American such as Missouri allow you to keep river otters as pets.", "They are the smallest otter species in the world.", "Its paws are a distinctive feature, its claws not extending beyond the fleshy end pads of its partially webbed fingers and toes.", "This gives it a high degree of manual dexterity so that it can use its paws to feed on molluscs, crabs and other small aquatic animals."],
+            ["Otters have long, slim bodies and relatively short limbs.", "Their most striking anatomical features are the powerful webbed feet used to swim, and their seal-like abilities holding breath underwater.", "Most have sharp claws on their feet and all except the sea otter have long, muscular tails.", "There are 13 still existing otter species are all semiaquatic, aquatic or marine, with diets based on fish and invertebrates.", "All the 13 different species are either endangered, near threatened and vulnerable."],
+            ["Hammerhead sharks are named for the unusual and distinctive structure of their heads, which are flattened and laterally extended into a hammer shape called a cephalofoil.", "Hammerheads have disproportionately small mouths and seem to do a lot of bottom-hunting.", "Unlike most sharks, hammerheads usually swim in schools during the day, becoming solitary hunters at night.", "In Singapore, sharks are now rarely seen and occasional sightings still confirm their presence, and it is surprising to note that hammerhead sharks were common in Singapore's past (Tham, 1973b)."], 
+            ["There are more than 465 known species of sharks living in our oceans today.", "Sharks belong to a family of fish that have skeletons made of cartilage, a tissue more flexible and lighter than bone.", "All sharks have multiple rows of teeth, and while they lose teeth on a regular basis, new teeth continue to grow in and replace those they lose.", "The commonly seen sharks on Singapore's shores are the Bamboo sharks and Black tipped reef sharks.", "Black tipped reef sharks are sometimes encountered when we visit the Southern submerged reefs at low tide."],
+            ["Leatherback turtles feed almost exclusively on jellyfish.", "Hawksbills principally eat sponges.", "4 out of 7 species of marine turtles can be found in Singapore.", "A sleeping sea turtle can remain underwater for 4–7 hours.", "Sea turtles can not retract their head, legs, and arms into their shells like other turtles."],
+            ["Dogs have better low-light vision than humans because of a special light-reflecting layer behind their retinas.", "Obesity is the #1 health problem among dogs.", "Queen Elizabeth II has owned over 30 corgis during her reign.", "The royal corgis have an extensive menu at the palace which includes fresh rabbit and beef, served by a gourmet chef.", "In Singapore, HDB has a list of approved dog breeds that they approve and you can only keep 1 dog."],
+            ["Cats enjoy sleeping more than their daily activities of hunting, playing and eating.", "A domesticated cat sleeps for an average of 13 – 16 hours a day.", "When cats bump you with the front part of their head - bunting, that is when they are truly showing affection.", "Cats that roll onto their backs and stretches out in front of you (with their belly area exposed) is saying - I'm happy and secure.", "Cats are not allowed in HDB flats.", "Reasons given by HDB is that they are generally difficult to contain within the flat, shed fur and caterwaul during mating season."],
+            ["A dugong's mouth faces downwards to munch on seagrass and it has large, grinding teeth that grow continuously.", "The dugong is the only herbivorous mammal that is strictly marine.", "The manatee has a circular tail while dugongs have a dolphin-like tail.", "Dugongs eat only seagrasses, and thus sometimes called sea cows!", "They leave a typical feeding trail in the meadows and we have seen fresh trails on Chek Jawa and even mainland shores like Changi."]
+        ];
+
+        var paragraphs = [
+            ["Otters have become something of a national obsession in Singapore, to the extent that in early August Singaporeans chose this family, known as the Bishan Ten, as the official emblem of Singapore's 51st year.", "Smooth-coated otters are often sighted in Singapore's mangroves, mudflats and coastal areas. The Bishan 10 are the friendliest of the bunch. There are at least 50 otters in Singapore, with families scattered in places such as Punggol, Bishan, Marina Bay, Changi, Kallang and Pasir Ris. Otters have thrived partly due to Singapore's efforts to clean up its water bodies and partly because otters have been forced out of the neighbouring shores of Johor which have undergone development.", "When you spot an otter in the evening, you get a proper show. They always seem to follow a similar pattern of behaviour. First they'll catch some fish, and proceed to happily tear them to pieces and devour them, either on the shore or in the water. After dinner, they start to play, chasing each other around in the water - they remind me of a mixture between a dog, a cat and a seal. After about half an hour of this, and just as twilight begins to settle in, they'll scramble up the bank, find a bit of bare earth, and start to roll around until they're coated in fine sand. A bit more frolicking, and then suddenly, just like that, it's time to go - they vanish down into the water, or under a bridge, in the space of a minute or two."],
+            ["All the limelight on the smooth-coated otters may lead people to think that there is only one species of otter in Singapore. However, there are in fact two species that can be found here. They are the smooth-coated otters, and the more elusive Asian small-clawed otters.", "They are the smallest otter species in the world. Its paws are a distinctive feature, its claws not extending beyond the fleshy end pads of its partially webbed fingers and toes. This gives it a high degree of manual dexterity so that it can use its paws to feed on molluscs, crabs and other small aquatic animals.", "Some states in American such as Missouri allow you to keep river otters as pets. All you need to do is obtain a Wildlife Hobby Permit, and that authorizes you to hold no more than one red or grey fox, coyote, beaver, river otter, Eastern grey squirrel, bobcat, badger, or opossum for personal use. (MO - Exotic pet - 578.023)"],
+            ["Otters have long, slim bodies and relatively short limbs. Their most striking anatomical features are the powerful webbed feet used to swim, and their seal-like abilities holding breath underwater. Most have sharp claws on their feet and all except the sea otter have long, muscular tails.", "There are 13 still existing otter species are all semiaquatic, aquatic or marine, with diets based on fish and invertebrates. All the 13 different species are either endangered, near threatened and vulnerable. Only the North American River Otter has a stable population trend. (ICUN Otter Specialist Group)"],
+            ["Hammerhead sharks are named for the unusual and distinctive structure of their heads, which are flattened and laterally extended into a hammer shape called a cephalofoil. Hammerheads have disproportionately small mouths and seem to do a lot of bottom-hunting. Unlike most sharks, hammerheads usually swim in schools during the day, becoming solitary hunters at night. ", "In Singapore, sharks are now rarely seen and occasional sightings still confirm their presence, and it is surprising to note that hammerhead sharks were common in Singapore's past (Tham, 1973b)."],
+            ["There are more than 465 known species of sharks living in our oceans today. Sharks belong to a family of fish that have skeletons made of cartilage, a tissue more flexible and lighter than bone. All sharks have multiple rows of teeth, and while they lose teeth on a regular basis, new teeth continue to grow in and replace those they lose.", "The commonly seen sharks on Singapore's shores are the Bamboo sharks and Black tipped reef sharks. Bamboo sharks are sometimes seen by divers at Pulau Hantu. Black tipped reef sharks are sometimes encountered when we visit the Southern submerged reefs at low tide. These sharks appear to hunt fish in low water, thus staying in the shallows at moderate tides or coming in with the tide."],
+            ["Sea turtles can be found in all oceans except for the polar regions. They mostly can be found in coral reefs. Leatherback turtles feed almost exclusively on jellyfish. Hawksbills principally eat sponges. The rest of the sea turtles are omnivorous. A sleeping sea turtle can remain underwater for 4–7 hours. Sea turtles can not retract their head, legs, and arms into their shells like other turtles.", "4 out of 7 species of marine turtles can be found in Singapore. The hawksbill, loggerhead, green turtle and leatherback traverse Singapore seas, feeding, resting and even nesting between their long journeys."],
+            ["Dogs have better low-light vision than humans because of a special light-reflecting layer behind their retinas. Dogs’ only sweat glands are between their paw pads. Dogs can be trained to detect epileptic seizures in humans. Obesity is the #1 health problem among dogs.", "Queen Elizabeth II has owned over 30 corgis during her reign. The corgis enjoy a privileged life in Buckingham Palace. They reside in the Corgi Room. The royal corgis have an extensive menu at the palace which includes fresh rabbit and beef, served by a gourmet chef. At Christmas, the Queen makes stockings for pets full of toys and delicacies such as biscuits.", "In Singapore, HDB has a list of approved dog breeds that they approve and you can only keep 1 dog. Flat owners found to breach this regulation can be fined up to a maximum of $4,000. These are mostly the smaller breeds of dogs and breeds such as corgis, huskies and golden retrievers are not on that list."],
+            ["Cats enjoy sleeping more than their daily activities of hunting, playing and eating. A domesticated cat sleeps for an average of 13 – 16 hours a day. When cats bump you with the front part of their head - bunting, that is when they are truly showing affection. Cats that roll onto their backs and stretches out in front of you (with their belly area exposed) is saying - I'm happy and secure.", "Cats are not allowed in HDB flats. Reasons given by HDB is that they are generally difficult to contain within the flat, shed fur and caterwaul during mating season."],
+            ["A dugong's mouth faces downwards to munch on seagrass and it has large, grinding teeth that grow continuously. Its digestive system is also adapted for tackling seagrass. The dugong is the only herbivorous mammal that is strictly marine.", "Sometimes confused with the manatee. The manatee has a circular tail while dugongs have a dolphin-like tail.", "Although rarely seen, signs of dugongs are often encountered on our seagrass meadows. Dugongs eat only seagrasses, and thus sometimes called sea cows! They leave a typical feeding trail in the meadows and we have seen fresh trails on Chek Jawa and even mainland shores like Changi. As well as meadows in the south like Pulau Semakau and Cyrene Reef and other submerged reefs."]
+        ];
+
+        for (var participant = 0; participant < 6; participant++) {
+            experiment = [];
+            trialNumber = 0;
+
+            if (participant > 2) { //switch the order for participants
+                technique = ["AUTOCOMPASTE", "TRADITIONAL"];
+            }
+
+            //remove first object and put at the end of the array after participant 1
+            if (participant != 0) {
+                var first = granularity.splice(0,1);
+                granularity.push(first[0]);
+            }
+
+            for (var b = 0; b < 3; b++) { //3 blocks in the experiment
+                block = b;
+                for (var t = 0; t < 2; t++) { //2 techniques in the experiment
+                    techniqueChosen = technique[t];
+                    for (var n = 0; n < 3; n++) { //number of articles combination
+                        articlesShown = numberOfArticles[n];
+                        for (var g = 0; g < 3; g++) { //number of articles combination
+                            granularityChosen = granularity[g];
+                            for (var tr = 0; tr < 3; tr++) { //number of articles combination
+                                trial = tr;
+                                trialNumber++;
+
+                                var articleChosen = threeArticles[block][trial];
+                                var stimuliSet = []
+
+                                switch(granularityChosen) {
+                                    case "phrase":
+                                        stimuliSet = phrases[articleChosen];
+                                        break;
+                                    case "sentence":
+                                        stimuliSet = sentences[articleChosen];
+                                        break;
+                                    case "paragraph":
+                                        stimuliSet = paragraphs[articleChosen];
+                                        break;
+                                    default:
+                                        console.log("Stimuli does not exist");
+                                        console.log("Chosen stimuli set:", stimuliSet, granularity);
+                                }
+
+                                var stimuli = stimuliSet[Math.floor(Math.random() * stimuliSet.length)]; //randomise article chosen
+
+                                var articlesToShow = [];
+                                switch(articlesShown) {
+                                    case 1:
+                                        articlesToShow.push(articleChosen);
+                                        break;
+                                    case 3:
+                                        articlesToShow = threeArticles[block];
+                                        break;
+                                    case 9:
+                                        articlesToShow = [0,1,2,3,4,5,6,7,8];
+                                        break;
+                                    default:
+                                        console.log("articlesToShow broke", articlesShown);
+                                }
+
+                                experiment.push({
+                                    "trial_number": trialNumber,
+                                    "technique": techniqueChosen,
+                                    "article_category": articleCategory[articleChosen],
+                                    "article_chosen": articleChosen,
+                                    "articles": articlesShown,
+                                    "article_to_show": articlesToShow,
+                                    "granularity": granularityChosen,
+                                    "data_file": data_file,
+                                    "stimuli": stimuli
+                                });
+                            }
+                        }
+                    }
+                }
+            }
+
+            var participantPID = participant + 1;
+            var participantExperimentJson = 'JSON' + participantPID;
+            
+            var json = document.getElementById(participantExperimentJson);
+            json.innerHTML = JSON.stringify(experiment, null, '  ');
+        }
+    </script>
+</body>
+</html>
