@@ -147,9 +147,9 @@
                 $.get(participantExperimentJSON, function (data) {
                     // Initialise experiments
                     // TO REVERT WHEN HOSTING
-                    //trialsData = data.experiments;
+                    trialsData = data.experiments;
                     // FOR LOCAL TESTING??? Doesn't work
-                    trialsData = $.parseJSON(data).experiments;
+                    //trialsData = $.parseJSON(data).experiments;
 
                     currentTrial = 0;
                     totalNumberOfTrials = trialsData.length;

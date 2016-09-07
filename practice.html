@@ -97,6 +97,8 @@
                     var technique = trialResult.technique;
                     var granularity = trialResult.granularity;
                     var trialNum = currentTrial;
+                    var numberOfArticles = trialResult.articles;
+                    var articleChosen = trialResult.article_to_show.toString();
                     var stimuli = trialResult.stimuli;
                     var userResponse = trialResult.user_response;
                     var trialStartTime = trialResult.start_time;
@@ -104,7 +106,7 @@
                     var trialDuration = trialResult.duration;
                     var accuracy = stimuli === userResponse ? 1 : 0;
 
-                    var row = [participantId, technique, granularity, trialNum,
+                    var row = [participantId, technique, granularity, trialNum, 
                                 stimuli, userResponse, trialStartTime,
                                 trialEndTime, trialDuration, accuracy];
                     trialData.push(row);
@@ -131,9 +133,9 @@
                 $.get(experimentJSON, function (data) {
                     // Initialise experiments
                     // TO REVERT WHEN HOSTING
-                    //trialsData = data.experiments;
+                    trialsData = data.experiments;
                     // FOR LOCAL TESTING??? Doesn't work
-                    trialsData = $.parseJSON(data).experiments;
+                    //trialsData = $.parseJSON(data).experiments;
                     console.log("trialsData", trialsData);
 
                     currentTrial = 0;
