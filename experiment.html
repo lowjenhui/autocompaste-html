@@ -60,7 +60,7 @@
                     <p>Please copy-paste the following <span class="js-expt-granularity">phrase</span> using the <span class="js-expt-technique bold">AUTOCOMPASTE</span> technique from one of the open windows.</p>
                     <div id="stimuli" class="alert alert-danger js-expt-stimuli">This is a long stimuli!</div>
                     <div style="text-align: right">
-                        <button class="btn btn-primary btn-lg" onclick="next()">Next Task</button>
+                        <button class="btn btn-primary btn-lg" onclick="nextTrialController()">Next Task</button>
                     </div>
                 </div>
                 <div id="autocompaste" class="col-sm-9">
@@ -94,7 +94,26 @@
             var switchTechniqueTime = 27;
             var nextInterval = 54;
 
-            function next () {
+            function nextTrialController() {
+                if (isUserInputFilled()) {
+                    next();
+                }
+            }
+
+            // In case user misses out something :P
+            // DISABLE THIS SHIT WHEN TESTING
+            function isUserInputFilled() {
+                var trialResult = ACPToolKit.getCurrentTrialState();
+                var userResponse = trialResult.user_response;
+                if (userResponse === "") {
+                    alert( "Please input your answer into the Text Editor." );
+                    return false;
+                }
+
+                return true;
+            }
+
+            function next() {
                 if (currentTrial !== 0) {
                     // Save results of current trial
                     var trialResult = ACPToolKit.getCurrentTrialState();

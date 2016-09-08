@@ -17,7 +17,9 @@ I have also created a practice trial for the users to practice using the given J
 There is also a break screen which correctly sets the start time of the next trial when 
 participants resume the experiment after a break.
 
-Ctrl-C has been disabled when participants the trial technique is ACP.
+Main experiment only:
+	Ctrl-C has been disabled when participants the trial technique is ACP.
+	Check is made for blank answers. 
 
 
 Thank you!
