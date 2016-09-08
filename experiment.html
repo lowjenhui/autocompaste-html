@@ -5,6 +5,7 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>CS4249 Assignment 1 - AutoComPaste vs Ctrl-C Ctrl-V</title>
         <meta name="description" content="">
+        <link rel="shortcut icon" href="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
@@ -88,15 +89,17 @@
                             'Article Chosen', 'Trial no', 'Stimuli', 'User Response', 'Trial Start Time',
                             'Trial End Time', 'Trial Time', 'Accuracy'];
             var trialData = [];
-            var flag = 2;
-            var nextAdd = 3;
+
+            var breakTime = 54;
+            var switchTechniqueTime = 27;
+            var nextInterval = 54;
 
             function next () {
                 if (currentTrial !== 0) {
                     // Save results of current trial
                     var trialResult = ACPToolKit.getCurrentTrialState();
 
-                    console.log("trialResult", trialResult);
+                    //console.log("trialResult", trialResult);
                     var technique = trialResult.technique;
                     var granularity = trialResult.granularity;
                     var trialNum = currentTrial;
@@ -115,15 +118,30 @@
                     trialData.push(row);
                 }
 
-                if (currentTrial == flag) {
-                    return;
-                }
-
                 if (currentTrial < totalNumberOfTrials) {
-                    // Show the next trial
-                    ACPToolKit.presentTrial(trialsData[currentTrial]);
-                    currentTrial += 1;
-                    $('.js-expt-current-trial').text(currentTrial);
+                    if (currentTrial === switchTechniqueTime) {
+                        console.log("participantId", participantId);
+                        switch(participantId) {
+                                case "1":
+                                case "2":
+                                case "3":
+                                    switchTechnique("autocompaste");
+                                    break;
+                                case "4":
+                                case "5":
+                                case "6":
+                                    switchTechnique("ctrlcv");
+                                    break;
+                                default:
+                                    console.log("switching participantId is not working", participantId);
+                            }
+                        switchTechniqueTime += nextInterval;
+                    } else if (currentTrial === breakTime){
+                        breakTime += nextInterval;
+                        startBreakTime();
+                    } else {
+                        presentTrial();
+                    }                  
                 } else {
                     // Last trial completed
                     ACPToolKit.downloadTrialResults(trialData);
@@ -131,12 +149,75 @@
                 }
             }
 
+            function switchTechnique(technique) {
+                var image = "img/autocompaste.png";
+                var techniqueName = "AutoComPaste";
 
-            //assume have button
-            //resume next() call
-            function resumeExperiment() {
-                next();
+                if (technique == "ctrlcv") {
+                    image = "img/ctrlcv.png";
+                    techniqueName = "Ctrl-C and Ctrl-V";
+                } 
+
+                var notificationSwitchTechnique = "<div class='text-center notification-overlay'>\
+                                <div class='panel panel-default notification-panel'>\
+                                    <div class='panel-body'>\
+                                        <img id='autocompaste-img' src='"+image+"'>\
+                                        <h2>Please use "+techniqueName+" in the next set</h2>\
+                                        <button class='btn btn-primary btn-lg' onclick='continueExperiment()'>Let's Go!</button>\
+                                    </div>\
+                                </div>\
+                            </div>";
+
+                $("body").append(notificationSwitchTechnique);
             }
+
+            function startBreakTime() {
+                image = "img/paused.png";
+                var notificationBreakTime = "<div class='text-center notification-overlay'>\
+                                <div class='panel panel-default notification-panel breaktime-panel'>\
+                                    <div class='panel-body'>\
+                                        <img id='breaktime-img' src='"+image+"'>\
+                                        <h2>Let's take a 1 minute break<br>before switching tasks</h2>\
+                                        <button class='btn btn-primary btn-lg' onclick='continueExperiment()'>Continue</button>\
+                                    </div>\
+                                </div>\
+                            </div>";
+                $("body").append(notificationBreakTime);
+            }
+
+
+            // Show the next trial
+            function presentTrial() {
+                ACPToolKit.presentTrial(trialsData[currentTrial]);
+                currentTrial += 1;
+                $('.js-expt-current-trial').text(currentTrial);
+            }
+
+            // Continue with experiment
+            function continueExperiment() {
+                $('.notification-overlay').remove();
+                presentTrial();
+            }
+
+            // Disables "ctrl + c" when technique is ACP
+            $(document).on('keydown', function (e) {
+              var currTechnique = ACPToolKit.getCurrentTrialState().technique;
+              var keyPressed = e.key.toUpperCase();
+              var isCtrlCPressed = e.ctrlKey && (keyPressed === 'C');
+              var isTechniqueACP = (currTechnique === 'AUTOCOMPASTE');
+              if (isCtrlCPressed && isTechniqueACP) {
+                alert( "Please use the AutoComPaste technique." );
+              }
+            });
+
+            // Testing function to skip trials
+            // $(document).on('keydown', function (e) {
+            //     var keyPressed = e.key;
+            //     if (keyPressed === '1') {
+            //         next();
+            //     }
+            // });
+
 
             $(document).ready(function () {
                 // Experiments are arranged differently in it's respective json file for the different participants
@@ -149,7 +230,7 @@
                     // TO REVERT WHEN HOSTING
                     trialsData = data.experiments;
                     // FOR LOCAL TESTING??? Doesn't work
-                    //trialsData = $.parseJSON(data).experiments;
+                    // trialsData = $.parseJSON(data).experiments;
 
                     currentTrial = 0;
                     totalNumberOfTrials = trialsData.length;

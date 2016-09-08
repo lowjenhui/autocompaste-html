@@ -5,6 +5,7 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>CS4249 Assignment 1 - AutoComPaste vs Ctrl-C Ctrl-V</title>
         <meta name="description" content="">
+        <link rel="shortcut icon" href="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
@@ -89,6 +90,10 @@
                             'Trial End Time', 'Trial Time', 'Accuracy'];
             var trialData = [];
 
+
+            var breakTest = 2;
+            var nextBreakInterval = 2;
+
             function next () {
                 if (currentTrial !== 0) {
                     // Save results of current trial
@@ -106,26 +111,51 @@
                     var trialDuration = trialResult.duration;
                     var accuracy = stimuli === userResponse ? 1 : 0;
 
-                    var row = [participantId, technique, granularity, trialNum, 
-                                stimuli, userResponse, trialStartTime,
+                    var row = [participantId, technique, granularity, numberOfArticles, 
+                                articleChosen, trialNum, stimuli, userResponse, trialStartTime,
                                 trialEndTime, trialDuration, accuracy];
                     trialData.push(row);
                 }
 
                 if (currentTrial < totalNumberOfTrials) {
-                    console.log("trialsData[currentTrial]", trialsData[currentTrial]);
-
-                    // Show the next trial
-                    console.log(ACPToolKit);
-                    ACPToolKit.presentTrial(trialsData[currentTrial]);
-                    currentTrial += 1;
-                    $('.js-expt-current-trial').text(currentTrial);
+                    presentTrial();
                 } else {
                     // Last trial completed
                     ACPToolKit.downloadTrialResults(trialData);
-                    window.location = 'experiment.html';
+
+                    //show notification
+                    $("body").append("<div class='notification-overlay text-center'><div class='panel panel-default notification-panel'><div class='panel-body'><img id='end-practice-img' src='img/experiment-blue.png'><h2>Ready to move on to the real experiment?</h2><button id='practice-again-button' class='btn btn-secondary btn-lg' onclick='displayPracticeTrial()'>Practice Again!</button><button class='btn btn-primary btn-lg' onclick='displayMainExperiment()'>Main Experiment</button> </div></div></div>");
                 }
             }
+
+            // Show the next trial
+            function presentTrial() {
+                ACPToolKit.presentTrial(trialsData[currentTrial]);
+                currentTrial += 1;
+                $('.js-expt-current-trial').text(currentTrial);
+            }
+
+            //Show practice trial again
+            function displayPracticeTrial() {
+                window.location = 'practice.html';
+            }
+
+            //Continue to main experiment
+            function displayMainExperiment() {
+                window.location = 'experiment.html';
+            }
+
+            // Disables "ctrl + c" when technique is ACP
+            $(document).on('keydown', function (e) {
+              var currTechnique = ACPToolKit.getCurrentTrialState().technique;
+              var keyPressed = e.key.toUpperCase();
+              var isCtrlCPressed = e.ctrlKey && (keyPressed === 'C');
+              var isTechniqueACP = (currTechnique === 'AUTOCOMPASTE');
+              
+              if (isCtrlCPressed && isTechniqueACP) {
+                alert( "Please use the AutoComPaste technique." );
+              }
+            });
 
             $(document).ready(function () {
                 var experimentJSON = 'data/practice/experiments.json';
@@ -136,7 +166,6 @@
                     trialsData = data.experiments;
                     // FOR LOCAL TESTING??? Doesn't work
                     //trialsData = $.parseJSON(data).experiments;
-                    console.log("trialsData", trialsData);
 
                     currentTrial = 0;
                     totalNumberOfTrials = trialsData.length;

@@ -78,7 +78,6 @@ var ACPToolKit = (function () {
         var startTime = null;
 
         module.presentTrial = function (options) {
-            console.log("options", options);
             startTime = new Date().getTime();
             currentTrialOptions = options;
 
@@ -147,6 +146,11 @@ var ACPToolKit = (function () {
             currentTrialOptions.duration = endTime - startTime;
             currentTrialOptions.user_response = $.trim($('.autocompaste-textarea').val());
             return currentTrialOptions;
+        }
+
+        module.setStartTime = function () {
+            startTime = new Date().getTime();
+            currentTrialOptions.start_time = startTime;
         }
     }
 

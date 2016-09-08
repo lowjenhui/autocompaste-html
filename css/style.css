@@ -173,3 +173,46 @@ body.experiment-page {
   -ms-user-select: none;
   user-select: none;
 }
+
+.notification-overlay {
+  position: absolute;
+  z-index: 9999;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.85);
+}
+
+.notification-panel {
+  top: 20vh;
+  position: relative;
+  margin: 0 auto;
+  width: 50vw;
+  height: 65vh;
+  display: block;
+}
+
+#end-practice-img {
+  margin: 1vh;
+  height: 40vh;
+}
+
+#autocompaste-img {
+  margin: 1vh;
+  height: 40vh;
+}
+
+.notification-panel > .panel-body > .btn {
+  margin: 10px 5px 0 10px;
+}
+
+.breaktime-panel {
+  top: 10vh;
+  height: 75vh;
+}
+
+#breaktime-img {
+  margin: 1.2vh;
+  margin-top: 10vh;
+}

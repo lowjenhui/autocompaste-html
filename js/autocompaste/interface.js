@@ -34,7 +34,7 @@ AutoComPaste.Interface = (function () {
    * The class constructor.
    */
   function Interface (wm, engine, texts_json, article_to_show) {
-    console.log("JSON input", texts_json);
+    //console.log("JSON input", texts_json);
     /** Internal functions */
     this._showError = function _showerror() {
       document.getElementById('error-overlay').style.display = 'block';
@@ -107,11 +107,8 @@ AutoComPaste.Interface = (function () {
       if (privates.texts_returned == privates.texts_available) {
         // At this point, we have all the texts already.
         // Begin constructing the UI.
-        //
+        
         // For every text that we find, we create a new window for it.
-        console.log("Interface._fetchTextComplete: Finished fetching all texts");
-        console.log(privates);
-        console.log(privates.texts);
         for (var text_title in privates.texts) {
 
           // Getting back the article numbers
@@ -157,7 +154,7 @@ AutoComPaste.Interface = (function () {
           //Only display article if it is chosen in the articles to show
           if ($.inArray(articleNumber, article_to_show) != -1) {
             if (privates.texts.hasOwnProperty(text_title)) {
-              console.log("Interface._fetchTextComplete: Creating window for text \"" + text_title + "\"");
+              //console.log("Interface._fetchTextComplete: Creating window for text \"" + text_title + "\"");
               iface._createWindowForText(text_title);
             }
           }
@@ -176,7 +173,7 @@ AutoComPaste.Interface = (function () {
         if (privates.engine) {
           for (var text_title in privates.texts) {
             if (privates.texts.hasOwnProperty(text_title)) {
-              console.log("Interface._fetchTextComplete: Adding text \"" + text_title + "\" to ACP engine");
+              //console.log("Interface._fetchTextComplete: Adding text \"" + text_title + "\" to ACP engine");
               privates.engine.addToIndex(text_title, privates.texts[text_title]);
             }
           }
@@ -200,7 +197,7 @@ AutoComPaste.Interface = (function () {
     };
 
     this._fetchTextSuccess = function _fetchTextsSuccess (data, text_status, jqxhr, text_source) {
-      console.log("Interface._fetchTextSuccess: Retrieved source: " + text_source.url);
+      //console.log("Interface._fetchTextSuccess: Retrieved source: " + text_source.url);
       privates.texts[text_source.title] = data;
     };
 
@@ -277,7 +274,7 @@ AutoComPaste.Interface = (function () {
       return;
     }
     
-    console.log("Interface: starting using data url: " + texts_json);
+    //console.log("Interface: starting using data url: " + texts_json);
 
     // Define private variables.
     var iface = this;
