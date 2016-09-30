@@ -216,3 +216,7 @@ body.experiment-page {
   margin: 1.2vh;
   margin-top: 10vh;
 }
+
+.dropdown-menu {
+  z-index: 5000;
+}
